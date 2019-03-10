@@ -11,6 +11,14 @@ function generate_color() {
     color ='rgb(' + red + ', ' + green + ', ' + blue +')'
     return color
 }
-generate_color();
- var element = document.getElementById("logo");
- element.style.backgroundColor = color;
+
+
+    generate_color();
+    var element = document.getElementById("logo");
+    element.style.backgroundColor = color;
+
+function onmouse() {
+    generate_color();
+    var element = document.getElementById("logo");
+    element.style.backgroundColor = color;
+}
