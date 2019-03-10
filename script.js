@@ -12,13 +12,9 @@ function generate_color() {
     return color
 }
 
-
-    generate_color();
-    var element = document.getElementById("logo");
-    element.style.backgroundColor = color;
-
 function onmouse() {
     generate_color();
     var element = document.getElementById("logo");
     element.style.backgroundColor = color;
 }
+onmouse()
