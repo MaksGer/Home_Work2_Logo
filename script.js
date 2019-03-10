@@ -1,20 +1,22 @@
-var color
-function generate_color() {
-    function generate_random() {
-        var random = Math.random() * 256;
+let color;
+function generateColor() {
+    function generateRandom() {
+        let random = Math.random() * 256;
         random = Math.floor(random);
-        return random
-    };
-    var red = generate_random();
-    var green = generate_random();
-    var blue = generate_random();
-    color ='rgb(' + red + ', ' + green + ', ' + blue +')'
-    return color
+        return random;
+    }
+
+    let red = generateRandom();
+    let green = generateRandom();
+    let blue = generateRandom();
+    color ='rgb(' + red + ', ' + green + ', ' + blue +')';
+    return color;
 }
 
-function onmouse() {
-    generate_color();
-    var element = document.getElementById("logo");
+function onMouse() {
+    generateColor();
+    let element = document.getElementById("logo");
     element.style.backgroundColor = color;
 }
-onmouse()
+
+onMouse();
