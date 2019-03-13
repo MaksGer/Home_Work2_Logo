@@ -1,13 +1,16 @@
-#logo {
-    text-align: center;
-    font-size: 25px;
-    box-sizing: border-box;
-
-
-
+#wrapper {
+    color: black;
+    height: 250px;
+    background-color: rgb(18, 70, 166);
 }
-
-.svg {
-    display: inline-block;
-    background-color: rgba(64, 62, 62, 0.4);
+#wrapped {
+    border: 1px solid white;
+    filter:brightness(85%);
+    color: white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 70, 166);
 }
